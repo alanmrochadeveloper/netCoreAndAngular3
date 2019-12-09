@@ -122,3 +122,13 @@ C:\Users\alanm_9qb660b\git\repos\netCoreAndAngular3\SportsStore\ServerApp\obj\De
 C:\Users\alanm_9qb660b\git\repos\netCoreAndAngular3\SportsStore\ServerApp\obj\Debug\netcoreapp3.1\ServerApp.csproj.CopyComplete
 C:\Users\alanm_9qb660b\git\repos\netCoreAndAngular3\SportsStore\ServerApp\obj\Debug\netcoreapp3.1\ServerApp.dll
 C:\Users\alanm_9qb660b\git\repos\netCoreAndAngular3\SportsStore\ServerApp\obj\Debug\netcoreapp3.1\ServerApp.pdb
+C:\Users\alanm_9qb660b\git\repos\netCoreAndAngular3\SportsStore\ServerApp\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\alanm_9qb660b\git\repos\netCoreAndAngular3\SportsStore\ServerApp\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\alanm_9qb660b\git\repos\netCoreAndAngular3\SportsStore\ServerApp\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\alanm_9qb660b\git\repos\netCoreAndAngular3\SportsStore\ServerApp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+C:\Users\alanm_9qb660b\git\repos\netCoreAndAngular3\SportsStore\ServerApp\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\alanm_9qb660b\git\repos\netCoreAndAngular3\SportsStore\ServerApp\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\alanm_9qb660b\git\repos\netCoreAndAngular3\SportsStore\ServerApp\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.dll
+C:\Users\alanm_9qb660b\git\repos\netCoreAndAngular3\SportsStore\ServerApp\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\alanm_9qb660b\git\repos\netCoreAndAngular3\SportsStore\ServerApp\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\alanm_9qb660b\git\repos\netCoreAndAngular3\SportsStore\ServerApp\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
