@@ -26,12 +26,14 @@ namespace ServerApp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            Console.WriteLine($"Machine name = {Environment.MachineName}!");
             string connectionString;
             if( Environment.MachineName == "DESKTOP-ALANM"){
                 connectionString = Configuration["ConnectionStrings:Home"];
             }
             else if(Environment.MachineName == "LAPTOP-ALANM"){
-                connectionString = Configuration["ConnectionStrings:Laptop"];
+                Console.WriteLine("confirmed laptop");
+                connectionString = Configuration["ConnectionStrings:HomeLaptop"];
             }
             else if(Environment.MachineName == "DESKTOP-FJS6ERP"){
                 Console.WriteLine("Job Machine!");
