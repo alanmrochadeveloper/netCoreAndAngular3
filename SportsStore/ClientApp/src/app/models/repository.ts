@@ -82,6 +82,6 @@ export class Repository{
         let data = {
             name: supp.name, city: supp.city, state: supp.state
         };
-        this.http.put(`${suppliersUrl}/${supp.supplierId}`, data).subscribe(() => this.getProducts());
+        this.http.put(`${suppliersUrl}/${supp.supplierId}`, data).subscribe(() => this.getProducts());//teste asdssw
     }
 }
