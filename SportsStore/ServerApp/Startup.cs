@@ -46,7 +46,7 @@ namespace ServerApp
             services.AddDbContext<DataContext> (options => options.UseSqlServer(connectionString));
             services.AddControllersWithViews().AddJsonOptions( opts => { 
                 opts.JsonSerializerOptions.IgnoreNullValues = true;
-            });
+            }).AddNewtonsoftJson();// AddNewtonsoftJson allows me to parse JSON "patch" requests   | dotnet add package Microsoft.AspNetCore.Mvc.NewtonsoftJson |    optional => [--version 3.0.0]
             services.AddRazorPages();
             services.AddSwaggerGen( 
                 options => 
