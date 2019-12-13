@@ -40,4 +40,10 @@ export class AppComponent {
     changes.set("supplier", null);
     this.repo.updateProduct(1, changes);
   }
+  deleteProduct(){
+    this.repo.deleteProduct(1);
+  }
+  deleteSupplier(){
+    this.repo.deleteSupplier(2);
+  }
 }

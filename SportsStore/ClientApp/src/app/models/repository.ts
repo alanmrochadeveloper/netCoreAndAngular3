@@ -89,4 +89,10 @@ export class Repository{
         changes.forEach((value, key) => patch.push({op: "replace", path: key, value: value}));
         this.http.patch(`${productsUrl}/${id}`, patch).subscribe(() => this.getProducts());
     }
+    deleteProduct(id: number){
+        this.http.delete(`${productsUrl}/${id}`).subscribe(() => this.getProducts());
+    }
+    deleteSupplier(id: number){
+        this.http.delete(`${suppliersUrl}/${id}`).subscribe(() => { this.getProducts(); this.getSuppliers();});
+    }
 }
