@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\ClientApp",
+    "\\ClientApp\\src",
+    "\\ClientApp\\src\\app",
+    "\\ClientApp\\src\\app\\models",
+    "\\ClientApp\\src\\app\\store",
+    "\\ServerApp",
+    "\\ServerApp\\Views",
+    "\\ServerApp\\Views\\Shared"
+  ],
+  "SelectedNode": "\\ServerApp\\Views\\Shared\\_Layout.cshtml",
+  "PreviewInSolutionExplorer": false
+}
