@@ -142,3 +142,4 @@ C:\Users\alanm\git\repos\netCoreAndAngular3\SportsStore\ServerApp\bin\Debug\netc
 C:\Users\alanm\git\repos\netCoreAndAngular3\SportsStore\ServerApp\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\alanm\git\repos\netCoreAndAngular3\SportsStore\ServerApp\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\alanm\git\repos\netCoreAndAngular3\SportsStore\ServerApp\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\alanm\git\repos\netCoreAndAngular3\SportsStore\ServerApp\bin\Debug\netcoreapp3.1\libman.json
