@@ -490,6 +490,20 @@
           "lib/netcoreapp3.1/Microsoft.Extensions.Caching.Memory.dll": {}
         }
       },
+      "Microsoft.Extensions.Caching.SqlServer/3.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Data.SqlClient": "1.0.19239.1",
+          "Microsoft.Extensions.Caching.Abstractions": "3.1.0",
+          "Microsoft.Extensions.Options": "3.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Caching.SqlServer.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Caching.SqlServer.dll": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/3.1.0": {
         "type": "package",
         "dependencies": {
@@ -2497,6 +2511,20 @@
         "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.xml",
         "microsoft.extensions.caching.memory.3.1.0.nupkg.sha512",
         "microsoft.extensions.caching.memory.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "Microsoft.Extensions.Caching.SqlServer/3.1.0": {
+      "sha512": "3hagN62gRPGYDRMqrrbRzpyYkseDgo6AJvXLcDh3vjAfXPRt6LOddXRBuU/qYzTgvefzvOH7+NDCOIng6S+V+g==",
+      "type": "package",
+      "path": "microsoft.extensions.caching.sqlserver/3.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.Caching.SqlServer.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Caching.SqlServer.xml",
+        "microsoft.extensions.caching.sqlserver.3.1.0.nupkg.sha512",
+        "microsoft.extensions.caching.sqlserver.nuspec",
         "packageIcon.png"
       ]
     },
@@ -6485,6 +6513,7 @@
       "Microsoft.AspNetCore.SpaServices.Extensions >= 3.1.0",
       "Microsoft.EntityFrameworkCore.Design >= 3.1.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.0",
+      "Microsoft.Extensions.Caching.SqlServer",
       "Swashbuckle.AspNetCore >= 5.0.0-rc2"
     ]
   },
@@ -6549,6 +6578,10 @@
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
             "version": "[3.1.0, )"
+          },
+          "Microsoft.Extensions.Caching.SqlServer": {
+            "target": "Package",
+            "version": "(, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
