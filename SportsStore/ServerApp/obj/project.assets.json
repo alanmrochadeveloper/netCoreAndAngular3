@@ -3366,7 +3366,7 @@
       ]
     },
     "System.Collections.NonGeneric/4.3.0": {
-      "sha512": "LE/oChpRvkSi3U25u0KnJcI44JeDZ1QJCyN4qFDx2uusEypdqR24w7lKYw21eYe5esuCBuc862wRmpF63Yy1KQ==",
+      "sha512": "prtjIEMhGUnQq6RnPEYLpFt8AtLbp9yq2zxOSrY7KJJZrw25Fi97IzBqY7iqssbM61Ek5b8f3MG/sG1N2sN5KA==",
       "type": "package",
       "path": "system.collections.nongeneric/4.3.0",
       "files": [
@@ -3627,7 +3627,7 @@
       ]
     },
     "System.ComponentModel.TypeConverter/4.3.0": {
-      "sha512": "HZiP0DwTHJ+C+rdFqP47nBYUh5283kcwXIGY2zOVVhsJmVI/2tYiX2zNRdjRQRHsTox58Ydkec6h0pWSh8wAsw==",
+      "sha512": "16pQ6P+EdhcXzPiEK4kbA953Fu0MNG2ovxTZU81/qsCd1zPRsKc3uif5NgvllCY598k6bI0KUyKW8fanlfaDQg==",
       "type": "package",
       "path": "system.componentmodel.typeconverter/4.3.0",
       "files": [
@@ -6513,30 +6513,30 @@
       "Microsoft.AspNetCore.SpaServices.Extensions >= 3.1.0",
       "Microsoft.EntityFrameworkCore.Design >= 3.1.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.0",
-      "Microsoft.Extensions.Caching.SqlServer",
+      "Microsoft.Extensions.Caching.SqlServer >= 3.1.0",
       "Swashbuckle.AspNetCore >= 5.0.0-rc2"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\alanm\\.nuget\\packages\\": {},
+    "C:\\Users\\alanm_9qb660b\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\alanm\\git\\repos\\netCoreAndAngular3\\SportsStore\\ServerApp\\ServerApp.csproj",
+      "projectUniqueName": "C:\\Users\\alanm_9qb660b\\git\\repos\\netCoreAndAngular3\\SportsStore\\ServerApp\\ServerApp.csproj",
       "projectName": "ServerApp",
-      "projectPath": "C:\\Users\\alanm\\git\\repos\\netCoreAndAngular3\\SportsStore\\ServerApp\\ServerApp.csproj",
-      "packagesPath": "C:\\Users\\alanm\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alanm\\git\\repos\\netCoreAndAngular3\\SportsStore\\ServerApp\\obj\\",
+      "projectPath": "C:\\Users\\alanm_9qb660b\\git\\repos\\netCoreAndAngular3\\SportsStore\\ServerApp\\ServerApp.csproj",
+      "packagesPath": "C:\\Users\\alanm_9qb660b\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\alanm_9qb660b\\git\\repos\\netCoreAndAngular3\\SportsStore\\ServerApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\alanm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\alanm_9qb660b\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -6581,7 +6581,7 @@
           },
           "Microsoft.Extensions.Caching.SqlServer": {
             "target": "Package",
-            "version": "(, )"
+            "version": "[3.1.0, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",

@@ -67,7 +67,7 @@ namespace ServerApp
                 options => {
                     options.Cookie.Name = "SportsStore.Session";
                     options.IdleTimeout = System.TimeSpan.FromHours(48);
-                    options.Cookie.HttpOnly = false;
+                    options.Cookie.HttpOnly = false;//must be set false so angular app will access it
                     options.Cookie.IsEssential = true;
                 }
             );
