@@ -6518,25 +6518,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\alanm_9qb660b\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\alanm\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\alanm_9qb660b\\git\\repos\\netCoreAndAngular3\\SportsStore\\ServerApp\\ServerApp.csproj",
+      "projectUniqueName": "C:\\Users\\alanm\\git\\repos\\netCoreAndAngular3\\SportsStore\\ServerApp\\ServerApp.csproj",
       "projectName": "ServerApp",
-      "projectPath": "C:\\Users\\alanm_9qb660b\\git\\repos\\netCoreAndAngular3\\SportsStore\\ServerApp\\ServerApp.csproj",
-      "packagesPath": "C:\\Users\\alanm_9qb660b\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alanm_9qb660b\\git\\repos\\netCoreAndAngular3\\SportsStore\\ServerApp\\obj\\",
+      "projectPath": "C:\\Users\\alanm\\git\\repos\\netCoreAndAngular3\\SportsStore\\ServerApp\\ServerApp.csproj",
+      "packagesPath": "C:\\Users\\alanm\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\alanm\\git\\repos\\netCoreAndAngular3\\SportsStore\\ServerApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\alanm_9qb660b\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\alanm\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
