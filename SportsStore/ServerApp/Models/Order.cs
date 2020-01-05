@@ -1,4 +1,4 @@
-using System.IO.Enumeration;
+// using System.IO.Enumeration;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -12,6 +12,8 @@ namespace ServerApp.Models
         public long OrderId {get;set;}
         [Required]
         public string Name{get;set;}
+        
+        //[NotMapped]
         public IEnumerable<CartLine> Products {get;set;}
         [Required]
         public string Address{get;set;}
@@ -27,6 +29,8 @@ namespace ServerApp.Models
         public string CardNumber{get;set;}
         [Required]
         public string CardExpiry{get;set;}
+        [Required]
+        public string CardSecurityCode { get; set; }
         [BindNever]
         [Column(TypeName = "decimal(8,2)")]
         public decimal Total {get;set;}
@@ -36,7 +40,7 @@ namespace ServerApp.Models
     }
     public class CartLine {
         [BindNever]
-        public long CarLineId{get;set;}
+        public long CartLineId{get;set;}
         [Required]
         public long ProductId{get;set;}
         [Required]
