@@ -7,15 +7,15 @@ Step 1: Your Details
 <div class="p-2">
     <form novalidate #detailsForm="ngForm">
         <div class="form-group">
-            <labe>Name</labe>
+            <label>Name</label>
             <input #name="ngModel" name="name" class="form-control" [(ngModel)]="order.name" required />
             <div *ngIf="name.invalid" class="text-danger">
                 Please enter your name:
             </div>
         </div>
         <div class="form-group">
-            <label #adress="ngModel" name="street" class="form-control" [(ngModel)]="order.address" required >Address</label>
-            <input />
+            <label >Address</label>
+            <input  #address="ngModel" name="street" class="form-control" [(ngModel)]="order.address" required />
             <div *ngIf="address.invalid" class="text-danger">
                 Please enter your address
             </div>

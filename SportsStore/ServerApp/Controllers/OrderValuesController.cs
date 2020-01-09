@@ -52,7 +52,7 @@ namespace ServerApp.Controllers
         private decimal GetPrice(IEnumerable<CartLine> lines){
             IEnumerable<long> ids = lines.Select(l => l.ProductId);
             IEnumerable<Product> prods = context.Products.Where(p => ids.Contains(p.ProductId));
-            return prods.Select(p => lines.First(l => lines.ProductId == p.ProductId).Quantity * p.Price).Sum();
+            return prods.Select(p => lines.First(l => l.ProductId == p.ProductId).Quantity * p.Price).Sum();
         }
         private void ProcessPayment(Payment payment){
             // integrate your payment system here

@@ -122,8 +122,9 @@ export class Repository{
         this.http.get<Order[]>(ordersUrl).subscribe(data => this.orders = data);
     }
     createOrder(order: Order){
-        this.http.post<OrderConfirmation>(ordersUrl,{ name: order.name, address: order.address, payment: order.payment, products: order.products}).subscribe(data => { 
-            order.orderConfirmation = data;// order.orderConfirmation = data;
+        this.http.post<OrderConfirmation>(ordersUrl, { 
+            name: order.name, address: order.address, payment: order.payment, products: order.products}).subscribe(data => { 
+            order.orderConfirmation = data// order.orderConfirmation = data;
             order.cart.clear();
             order.clear();
         });
