@@ -30,17 +30,18 @@
           "lib/netstandard2.0/Microsoft.AspNetCore.Authentication.Core.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Authorization/2.0.0": {
+      "Microsoft.AspNetCore.Authorization/3.1.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
-          "Microsoft.Extensions.Options": "2.0.0"
+          "Microsoft.AspNetCore.Metadata": "3.1.0",
+          "Microsoft.Extensions.Logging.Abstractions": "3.1.0",
+          "Microsoft.Extensions.Options": "3.1.0"
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Authorization.dll": {}
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Authorization.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Authorization.dll": {}
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Authorization.dll": {}
         }
       },
       "Microsoft.AspNetCore.Authorization.Policy/2.0.0": {
@@ -54,6 +55,95 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Authorization.Policy.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Blazor/3.1.0-preview4.19579.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "3.1.0",
+          "Microsoft.Extensions.Options": "3.1.0",
+          "Mono.WebAssembly.Interop": "3.1.0-preview4.19579.2"
+        },
+        "compile": {
+          "lib/netstandard2.1/Microsoft.AspNetCore.Blazor.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.AspNetCore.Blazor.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Blazor.HttpClient/3.1.0-preview4.19579.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Text.Json": "4.7.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Blazor.HttpClient.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Blazor.HttpClient.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Blazor.Server/3.1.0-preview4.19579.2": {
+        "type": "package",
+        "dependencies": {
+          "Mono.Cecil": "0.10.1",
+          "Newtonsoft.Json": "12.0.2"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Blazor.Server.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Blazor.Server.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Microsoft.AspNetCore.Components/3.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authorization": "3.1.0",
+          "Microsoft.AspNetCore.Components.Analyzers": "3.1.0",
+          "Microsoft.JSInterop": "3.1.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Components.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Components.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Components.Analyzers/3.1.0": {
+        "type": "package",
+        "build": {
+          "build/netstandard2.0/_._": {}
+        }
+      },
+      "Microsoft.AspNetCore.Components.Forms/3.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "3.1.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Components.Forms.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Components.Forms.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Components.Web/3.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "3.1.0",
+          "Microsoft.AspNetCore.Components.Forms": "3.1.0",
+          "Microsoft.Extensions.DependencyInjection": "3.1.0",
+          "Microsoft.JSInterop": "3.1.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Components.Web.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Components.Web.dll": {}
         }
       },
       "Microsoft.AspNetCore.Hosting.Abstractions/2.0.0": {
@@ -154,6 +244,15 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Metadata/3.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Metadata.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Metadata.dll": {}
         }
       },
       "Microsoft.AspNetCore.Mvc.Abstractions/2.0.0": {
@@ -736,6 +835,15 @@
           "lib/netcoreapp2.1/Microsoft.Identity.Client.dll": {}
         }
       },
+      "Microsoft.JSInterop/3.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.JSInterop.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.JSInterop.dll": {}
+        }
+      },
       "Microsoft.Net.Http.Headers/2.0.0": {
         "type": "package",
         "dependencies": {
@@ -799,6 +907,43 @@
           }
         }
       },
+      "Mono.Cecil/0.10.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections": "4.0.11",
+          "System.IO.FileSystem": "4.0.1",
+          "System.IO.FileSystem.Primitives": "4.0.1",
+          "System.Reflection": "4.1.0",
+          "System.Runtime.Extensions": "4.1.0",
+          "System.Security.Cryptography.Algorithms": "4.2.0",
+          "System.Security.Cryptography.Csp": "4.0.0",
+          "System.Threading": "4.0.11"
+        },
+        "compile": {
+          "lib/netstandard1.3/Mono.Cecil.Mdb.dll": {},
+          "lib/netstandard1.3/Mono.Cecil.Pdb.dll": {},
+          "lib/netstandard1.3/Mono.Cecil.Rocks.dll": {},
+          "lib/netstandard1.3/Mono.Cecil.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/Mono.Cecil.Mdb.dll": {},
+          "lib/netstandard1.3/Mono.Cecil.Pdb.dll": {},
+          "lib/netstandard1.3/Mono.Cecil.Rocks.dll": {},
+          "lib/netstandard1.3/Mono.Cecil.dll": {}
+        }
+      },
+      "Mono.WebAssembly.Interop/3.1.0-preview4.19579.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.JSInterop": "3.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/Mono.WebAssembly.Interop.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Mono.WebAssembly.Interop.dll": {}
+        }
+      },
       "Newtonsoft.Json/12.0.2": {
         "type": "package",
         "compile": {
@@ -839,6 +984,19 @@
           "runtime.win-arm64.runtime.native.System.Data.SqlClient.sni": "4.4.0",
           "runtime.win-x64.runtime.native.System.Data.SqlClient.sni": "4.4.0",
           "runtime.win-x86.runtime.native.System.Data.SqlClient.sni": "4.4.0"
+        }
+      },
+      "runtime.native.System.Security.Cryptography/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.NETCore.Targets": "1.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
         }
       },
       "runtime.win-arm64.runtime.native.System.Data.SqlClient.sni/4.4.0": {
@@ -1586,6 +1744,21 @@
           }
         }
       },
+      "System.Runtime.Numerics/4.0.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Globalization": "4.0.11",
+          "System.Resources.ResourceManager": "4.0.1",
+          "System.Runtime": "4.1.0",
+          "System.Runtime.Extensions": "4.1.0"
+        },
+        "compile": {
+          "ref/netstandard1.1/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Runtime.Numerics.dll": {}
+        }
+      },
       "System.Runtime.Serialization.Formatters/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -1648,6 +1821,98 @@
           }
         }
       },
+      "System.Security.Cryptography.Algorithms/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.0.1",
+          "System.Collections": "4.0.11",
+          "System.IO": "4.1.0",
+          "System.Resources.ResourceManager": "4.0.1",
+          "System.Runtime": "4.1.0",
+          "System.Runtime.Extensions": "4.1.0",
+          "System.Runtime.Handles": "4.0.1",
+          "System.Runtime.InteropServices": "4.1.0",
+          "System.Runtime.Numerics": "4.0.1",
+          "System.Security.Cryptography.Encoding": "4.0.0",
+          "System.Security.Cryptography.Primitives": "4.0.0",
+          "System.Text.Encoding": "4.0.11",
+          "runtime.native.System.Security.Cryptography": "4.0.0"
+        },
+        "compile": {
+          "ref/netstandard1.6/System.Security.Cryptography.Algorithms.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard1.6/System.Security.Cryptography.Algorithms.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/netstandard1.6/System.Security.Cryptography.Algorithms.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Security.Cryptography.Csp/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.0.1",
+          "System.IO": "4.1.0",
+          "System.Reflection": "4.1.0",
+          "System.Resources.ResourceManager": "4.0.1",
+          "System.Runtime": "4.1.0",
+          "System.Runtime.Extensions": "4.1.0",
+          "System.Runtime.Handles": "4.0.1",
+          "System.Runtime.InteropServices": "4.1.0",
+          "System.Security.Cryptography.Algorithms": "4.2.0",
+          "System.Security.Cryptography.Encoding": "4.0.0",
+          "System.Security.Cryptography.Primitives": "4.0.0",
+          "System.Text.Encoding": "4.0.11",
+          "System.Threading": "4.0.11"
+        },
+        "compile": {
+          "ref/netstandard1.3/System.Security.Cryptography.Csp.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard1.3/System.Security.Cryptography.Csp.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/netstandard1.3/System.Security.Cryptography.Csp.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Security.Cryptography.Encoding/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.0.1",
+          "System.Collections": "4.0.11",
+          "System.Collections.Concurrent": "4.0.12",
+          "System.Linq": "4.1.0",
+          "System.Resources.ResourceManager": "4.0.1",
+          "System.Runtime": "4.1.0",
+          "System.Runtime.Extensions": "4.1.0",
+          "System.Runtime.Handles": "4.0.1",
+          "System.Runtime.InteropServices": "4.1.0",
+          "System.Security.Cryptography.Primitives": "4.0.0",
+          "System.Text.Encoding": "4.0.11",
+          "runtime.native.System.Security.Cryptography": "4.0.0"
+        },
+        "compile": {
+          "ref/netstandard1.3/System.Security.Cryptography.Encoding.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard1.3/System.Security.Cryptography.Encoding.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/netstandard1.3/System.Security.Cryptography.Encoding.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
       "System.Security.Cryptography.Primitives/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -1660,7 +1925,7 @@
           "System.Threading.Tasks": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.3/_._": {}
+          "ref/netstandard1.3/System.Security.Cryptography.Primitives.dll": {}
         },
         "runtime": {
           "lib/netstandard1.3/System.Security.Cryptography.Primitives.dll": {}
@@ -1792,6 +2057,15 @@
           "lib/netstandard2.0/System.Text.Encodings.Web.dll": {}
         }
       },
+      "System.Text.Json/4.7.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.0/System.Text.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/System.Text.Json.dll": {}
+        }
+      },
       "System.Text.RegularExpressions/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -1811,7 +2085,7 @@
           "System.Threading.Tasks": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.3/_._": {}
+          "ref/netstandard1.3/System.Threading.dll": {}
         },
         "runtime": {
           "lib/netstandard1.3/System.Threading.dll": {}
@@ -1939,6 +2213,20 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "BlazorApp/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Microsoft.AspNetCore.Blazor": "3.1.0-preview4.19579.2",
+          "Microsoft.AspNetCore.Blazor.HttpClient": "3.1.0-preview4.19579.2"
+        },
+        "compile": {
+          "bin/placeholder/BlazorApp.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BlazorApp.dll": {}
+        }
       }
     }
   },
@@ -1969,16 +2257,19 @@
         "microsoft.aspnetcore.authentication.core.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Authorization/2.0.0": {
-      "sha512": "jyU6UjcqHmuzuzqUsmpgMXHbnybaPcNYKDEHHaCJ1YhIiSlStb1bGy7L0IDViqdZWmiRi3UPjdIMkaU6FbuDag==",
+    "Microsoft.AspNetCore.Authorization/3.1.0": {
+      "sha512": "R/0qFIu1m7jJFD0OuLIjLXC0uYQxFwwW7ylVvGgUPUpOJJK0bKJjfrDu20kY1Yw0hy9ejZYZEdUZHRm3ei0+3w==",
       "type": "package",
-      "path": "microsoft.aspnetcore.authorization/2.0.0",
+      "path": "microsoft.aspnetcore.authorization/3.1.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Icon.png",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.Authorization.dll",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.Authorization.xml",
         "lib/netstandard2.0/Microsoft.AspNetCore.Authorization.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.Authorization.xml",
-        "microsoft.aspnetcore.authorization.2.0.0.nupkg.sha512",
+        "microsoft.aspnetcore.authorization.3.1.0.nupkg.sha512",
         "microsoft.aspnetcore.authorization.nuspec"
       ]
     },
@@ -1993,6 +2284,114 @@
         "lib/netstandard2.0/Microsoft.AspNetCore.Authorization.Policy.xml",
         "microsoft.aspnetcore.authorization.policy.2.0.0.nupkg.sha512",
         "microsoft.aspnetcore.authorization.policy.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Blazor/3.1.0-preview4.19579.2": {
+      "sha512": "5FXyybcmGsZYdAqZ5gVLSvimf9Kt+yLeBRhdEx+ehIarq8fa2VwlDlBh4R5/bmKS/0z1b76Br9d45FdulvHmGg==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.blazor/3.1.0-preview4.19579.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.txt",
+        "lib/netstandard2.1/Microsoft.AspNetCore.Blazor.dll",
+        "microsoft.aspnetcore.blazor.3.1.0-preview4.19579.2.nupkg.sha512",
+        "microsoft.aspnetcore.blazor.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Blazor.HttpClient/3.1.0-preview4.19579.2": {
+      "sha512": "+0jdcwNQAibSkiKxSJhzgezVsN3z3CP8zcYbVjIgNELIxdQDRMnossFw+s5L/tlOBA+HQCMT7WLBuaFOStZuRA==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.blazor.httpclient/3.1.0-preview4.19579.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.txt",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Blazor.HttpClient.dll",
+        "microsoft.aspnetcore.blazor.httpclient.3.1.0-preview4.19579.2.nupkg.sha512",
+        "microsoft.aspnetcore.blazor.httpclient.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Blazor.Server/3.1.0-preview4.19579.2": {
+      "sha512": "UzmGMKCq03/q1S7yRsnVJMVFDQbjPovTmbXruPogriJnMHZXggc/N84aMfse3mjPFGUyTy7jHD56qlNrL2INYg==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.blazor.server/3.1.0-preview4.19579.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.txt",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.Blazor.Server.dll",
+        "microsoft.aspnetcore.blazor.server.3.1.0-preview4.19579.2.nupkg.sha512",
+        "microsoft.aspnetcore.blazor.server.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Components/3.1.0": {
+      "sha512": "YIcE9FGLLMt8vnjaQEf6PhI4ikxibEv6t06SQTb9BAd//UxrOklqDhCzWldF6zXxh3+VnyVGFNOOlz9Tg8vQ8A==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.components/3.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.txt",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.Components.dll",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.Components.xml",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Components.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Components.xml",
+        "microsoft.aspnetcore.components.3.1.0.nupkg.sha512",
+        "microsoft.aspnetcore.components.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Components.Analyzers/3.1.0": {
+      "sha512": "DWvG559bbeNMkesZ/sYZqEH9iTx4N7WbdyChf2PS7ouZBcWjRSt/V+sKuofrTpb0c8STe14+U3kMKO5FtwaT/g==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.components.analyzers/3.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.txt",
+        "analyzers/dotnet/cs/Microsoft.AspNetCore.Components.Analyzers.dll",
+        "build/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.props",
+        "microsoft.aspnetcore.components.analyzers.3.1.0.nupkg.sha512",
+        "microsoft.aspnetcore.components.analyzers.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Components.Forms/3.1.0": {
+      "sha512": "BkW3QVWzpTlqJWbBasahUCrebUQraIZKYS3sK1nTQOw1xNFjfBmmiLipT/9jinnQh3ogatAtfhPxNr6DMrheQg==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.components.forms/3.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.txt",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.Components.Forms.dll",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.Components.Forms.xml",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Components.Forms.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Components.Forms.xml",
+        "microsoft.aspnetcore.components.forms.3.1.0.nupkg.sha512",
+        "microsoft.aspnetcore.components.forms.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Components.Web/3.1.0": {
+      "sha512": "wuoKzEIt/4nGU5Adohw93oVM/i2Bszcumm4RQ4XY8ruZCqtq0LmeTE1y1bqRtiRjNgvaUe6cH/ogh2pZ1LQovA==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.components.web/3.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.txt",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.Components.Web.dll",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.Components.Web.xml",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Components.Web.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Components.Web.xml",
+        "microsoft.aspnetcore.components.web.3.1.0.nupkg.sha512",
+        "microsoft.aspnetcore.components.web.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Hosting.Abstractions/2.0.0": {
@@ -2085,6 +2484,20 @@
         "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.xml",
         "microsoft.aspnetcore.jsonpatch.3.1.0.nupkg.sha512",
         "microsoft.aspnetcore.jsonpatch.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Metadata/3.1.0": {
+      "sha512": "ZiNCjglz4kR2OGElM2u/S6cS1ArAxE6lP4BeniCZcr6l+ACzslKgcPGOTY8/Glppx6CDzMKfmyqV+VbFh5CyjQ==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.metadata/3.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Metadata.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Metadata.xml",
+        "microsoft.aspnetcore.metadata.3.1.0.nupkg.sha512",
+        "microsoft.aspnetcore.metadata.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Mvc.Abstractions/2.0.0": {
@@ -2848,6 +3261,22 @@
         "ref/xamarinmac20/Microsoft.Identity.Client.xml"
       ]
     },
+    "Microsoft.JSInterop/3.1.0": {
+      "sha512": "A6w985fb6RyL4x69TILW3sF2DcAufUPDOwN1LpdRZ3sZcpvb2ZnM2TrarleDhtqfS5g0Ot+2AG5AM9svH9Cm8Q==",
+      "type": "package",
+      "path": "microsoft.jsinterop/3.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netcoreapp3.1/Microsoft.JSInterop.dll",
+        "lib/netcoreapp3.1/Microsoft.JSInterop.xml",
+        "lib/netstandard2.0/Microsoft.JSInterop.dll",
+        "lib/netstandard2.0/Microsoft.JSInterop.xml",
+        "microsoft.jsinterop.3.1.0.nupkg.sha512",
+        "microsoft.jsinterop.nuspec",
+        "packageIcon.png"
+      ]
+    },
     "Microsoft.Net.Http.Headers/2.0.0": {
       "sha512": "Rm9zeNCWyNrGnysHdRXJpNfeDVlPzzFuidSuRLRNvOrnw71vgNPlR4H9wHo2hG/oSaruukqNjK06MDQqb+eXhA==",
       "type": "package",
@@ -2950,6 +3379,44 @@
         "version.txt"
       ]
     },
+    "Mono.Cecil/0.10.1": {
+      "sha512": "ffMyCl/PZfD1v6JwWud7Y+Jg0C5cGOZ3jlx8G3b+hj7FUtmnrNHGcAM4EEnaKMyIcsqrfLX05u9XIAMYJSpPqQ==",
+      "type": "package",
+      "path": "mono.cecil/0.10.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/Mono.Cecil.Mdb.dll",
+        "lib/net35/Mono.Cecil.Pdb.dll",
+        "lib/net35/Mono.Cecil.Rocks.dll",
+        "lib/net35/Mono.Cecil.dll",
+        "lib/net40/Mono.Cecil.Mdb.dll",
+        "lib/net40/Mono.Cecil.Pdb.dll",
+        "lib/net40/Mono.Cecil.Rocks.dll",
+        "lib/net40/Mono.Cecil.dll",
+        "lib/netstandard1.3/Mono.Cecil.Mdb.dll",
+        "lib/netstandard1.3/Mono.Cecil.Pdb.dll",
+        "lib/netstandard1.3/Mono.Cecil.Rocks.dll",
+        "lib/netstandard1.3/Mono.Cecil.dll",
+        "mono.cecil.0.10.1.nupkg.sha512",
+        "mono.cecil.nuspec"
+      ]
+    },
+    "Mono.WebAssembly.Interop/3.1.0-preview4.19579.2": {
+      "sha512": "Rob66zGzQxQT+6W29OJM67uxZQPe4VvbPkSqjTQaRh6WJVGTUa/Moha7TX5/ZOgpgRCGMtjebTtbms4hT6+I3A==",
+      "type": "package",
+      "path": "mono.webassembly.interop/3.1.0-preview4.19579.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.txt",
+        "lib/netstandard2.1/Mono.WebAssembly.Interop.dll",
+        "lib/netstandard2.1/Mono.WebAssembly.Interop.xml",
+        "mono.webassembly.interop.3.1.0-preview4.19579.2.nupkg.sha512",
+        "mono.webassembly.interop.nuspec"
+      ]
+    },
     "Newtonsoft.Json/12.0.2": {
       "sha512": "rTK0s2EKlfHsQsH6Yx2smvcTCeyoDNgCW7FEYyV01drPlh2T243PR2DiDXqtC5N4GDm4Ma/lkxfW5a/4793vbA==",
       "type": "package",
@@ -3027,6 +3494,20 @@
         "runtime.native.system.data.sqlclient.sni.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "runtime.native.System.Security.Cryptography/4.0.0": {
+      "sha512": "2CQK0jmO6Eu7ZeMgD+LOFbNJSXHFVQbCJJkEyEwowh1SCgYnrn9W9RykMfpeeVGw7h4IBvYikzpGUlmZTUafJw==",
+      "type": "package",
+      "path": "runtime.native.system.security.cryptography/4.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/netstandard1.0/_._",
+        "runtime.native.system.security.cryptography.4.0.0.nupkg.sha512",
+        "runtime.native.system.security.cryptography.nuspec"
       ]
     },
     "runtime.win-arm64.runtime.native.System.Data.SqlClient.sni/4.4.0": {
@@ -5446,6 +5927,62 @@
         "system.runtime.interopservices.runtimeinformation.nuspec"
       ]
     },
+    "System.Runtime.Numerics/4.0.1": {
+      "sha512": "+XbKFuzdmLP3d1o9pdHu2nxjNr2OEPqGzKeegPLCUMM71a0t50A/rOcIRmGs9wR7a8KuHX6hYs/7/TymIGLNqg==",
+      "type": "package",
+      "path": "system.runtime.numerics/4.0.1",
+      "files": [
+        ".nupkg.metadata",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/netcore50/System.Runtime.Numerics.dll",
+        "lib/netstandard1.3/System.Runtime.Numerics.dll",
+        "lib/portable-net45+win8+wpa81/_._",
+        "lib/win8/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netcore50/System.Runtime.Numerics.dll",
+        "ref/netcore50/System.Runtime.Numerics.xml",
+        "ref/netcore50/de/System.Runtime.Numerics.xml",
+        "ref/netcore50/es/System.Runtime.Numerics.xml",
+        "ref/netcore50/fr/System.Runtime.Numerics.xml",
+        "ref/netcore50/it/System.Runtime.Numerics.xml",
+        "ref/netcore50/ja/System.Runtime.Numerics.xml",
+        "ref/netcore50/ko/System.Runtime.Numerics.xml",
+        "ref/netcore50/ru/System.Runtime.Numerics.xml",
+        "ref/netcore50/zh-hans/System.Runtime.Numerics.xml",
+        "ref/netcore50/zh-hant/System.Runtime.Numerics.xml",
+        "ref/netstandard1.1/System.Runtime.Numerics.dll",
+        "ref/netstandard1.1/System.Runtime.Numerics.xml",
+        "ref/netstandard1.1/de/System.Runtime.Numerics.xml",
+        "ref/netstandard1.1/es/System.Runtime.Numerics.xml",
+        "ref/netstandard1.1/fr/System.Runtime.Numerics.xml",
+        "ref/netstandard1.1/it/System.Runtime.Numerics.xml",
+        "ref/netstandard1.1/ja/System.Runtime.Numerics.xml",
+        "ref/netstandard1.1/ko/System.Runtime.Numerics.xml",
+        "ref/netstandard1.1/ru/System.Runtime.Numerics.xml",
+        "ref/netstandard1.1/zh-hans/System.Runtime.Numerics.xml",
+        "ref/netstandard1.1/zh-hant/System.Runtime.Numerics.xml",
+        "ref/portable-net45+win8+wpa81/_._",
+        "ref/win8/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.runtime.numerics.4.0.1.nupkg.sha512",
+        "system.runtime.numerics.nuspec"
+      ]
+    },
     "System.Runtime.Serialization.Formatters/4.3.0": {
       "sha512": "KT591AkTNFOTbhZlaeMVvfax3RqhH1EJlcwF50Wm7sfnBLuHiOeZRRKrr1ns3NESkM20KPZ5Ol/ueMq5vg4QoQ==",
       "type": "package",
@@ -5644,6 +6181,116 @@
         "system.security.accesscontrol.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "System.Security.Cryptography.Algorithms/4.2.0": {
+      "sha512": "8JQFxbLVdrtIOKMDN38Fn0GWnqYZw/oMlwOUG/qz1jqChvyZlnUmu+0s7wLx7JYua/nAXoESpHA3iw11QFWhXg==",
+      "type": "package",
+      "path": "system.security.cryptography.algorithms/4.2.0",
+      "files": [
+        ".nupkg.metadata",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Security.Cryptography.Algorithms.dll",
+        "lib/net461/System.Security.Cryptography.Algorithms.dll",
+        "lib/net463/System.Security.Cryptography.Algorithms.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net46/System.Security.Cryptography.Algorithms.dll",
+        "ref/net461/System.Security.Cryptography.Algorithms.dll",
+        "ref/net463/System.Security.Cryptography.Algorithms.dll",
+        "ref/netstandard1.3/System.Security.Cryptography.Algorithms.dll",
+        "ref/netstandard1.4/System.Security.Cryptography.Algorithms.dll",
+        "ref/netstandard1.6/System.Security.Cryptography.Algorithms.dll",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/unix/lib/netstandard1.6/System.Security.Cryptography.Algorithms.dll",
+        "runtimes/win/lib/net46/System.Security.Cryptography.Algorithms.dll",
+        "runtimes/win/lib/net461/System.Security.Cryptography.Algorithms.dll",
+        "runtimes/win/lib/net463/System.Security.Cryptography.Algorithms.dll",
+        "runtimes/win/lib/netcore50/System.Security.Cryptography.Algorithms.dll",
+        "runtimes/win/lib/netstandard1.6/System.Security.Cryptography.Algorithms.dll",
+        "system.security.cryptography.algorithms.4.2.0.nupkg.sha512",
+        "system.security.cryptography.algorithms.nuspec"
+      ]
+    },
+    "System.Security.Cryptography.Csp/4.0.0": {
+      "sha512": "/i1Usuo4PgAqgbPNC0NjbO3jPW//BoBlTpcWFD1EHVbidH21y4c1ap5bbEMSGAXjAShhMH4abi/K8fILrnu4BQ==",
+      "type": "package",
+      "path": "system.security.cryptography.csp/4.0.0",
+      "files": [
+        ".nupkg.metadata",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Security.Cryptography.Csp.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net46/System.Security.Cryptography.Csp.dll",
+        "ref/netstandard1.3/System.Security.Cryptography.Csp.dll",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/unix/lib/netstandard1.3/System.Security.Cryptography.Csp.dll",
+        "runtimes/win/lib/net46/System.Security.Cryptography.Csp.dll",
+        "runtimes/win/lib/netcore50/_._",
+        "runtimes/win/lib/netstandard1.3/System.Security.Cryptography.Csp.dll",
+        "system.security.cryptography.csp.4.0.0.nupkg.sha512",
+        "system.security.cryptography.csp.nuspec"
+      ]
+    },
+    "System.Security.Cryptography.Encoding/4.0.0": {
+      "sha512": "FbKgE5MbxSQMPcSVRgwM6bXN3GtyAh04NkV8E5zKCBE26X0vYW0UtTa2FIgkH33WVqBVxRgxljlVYumWtU+HcQ==",
+      "type": "package",
+      "path": "system.security.cryptography.encoding/4.0.0",
+      "files": [
+        ".nupkg.metadata",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Security.Cryptography.Encoding.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net46/System.Security.Cryptography.Encoding.dll",
+        "ref/netstandard1.3/System.Security.Cryptography.Encoding.dll",
+        "ref/netstandard1.3/System.Security.Cryptography.Encoding.xml",
+        "ref/netstandard1.3/de/System.Security.Cryptography.Encoding.xml",
+        "ref/netstandard1.3/es/System.Security.Cryptography.Encoding.xml",
+        "ref/netstandard1.3/fr/System.Security.Cryptography.Encoding.xml",
+        "ref/netstandard1.3/it/System.Security.Cryptography.Encoding.xml",
+        "ref/netstandard1.3/ja/System.Security.Cryptography.Encoding.xml",
+        "ref/netstandard1.3/ko/System.Security.Cryptography.Encoding.xml",
+        "ref/netstandard1.3/ru/System.Security.Cryptography.Encoding.xml",
+        "ref/netstandard1.3/zh-hans/System.Security.Cryptography.Encoding.xml",
+        "ref/netstandard1.3/zh-hant/System.Security.Cryptography.Encoding.xml",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/unix/lib/netstandard1.3/System.Security.Cryptography.Encoding.dll",
+        "runtimes/win/lib/net46/System.Security.Cryptography.Encoding.dll",
+        "runtimes/win/lib/netstandard1.3/System.Security.Cryptography.Encoding.dll",
+        "system.security.cryptography.encoding.4.0.0.nupkg.sha512",
+        "system.security.cryptography.encoding.nuspec"
       ]
     },
     "System.Security.Cryptography.Primitives/4.3.0": {
@@ -6017,6 +6664,27 @@
         "lib/netstandard2.0/System.Text.Encodings.Web.xml",
         "system.text.encodings.web.4.4.0.nupkg.sha512",
         "system.text.encodings.web.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Text.Json/4.7.0": {
+      "sha512": "IPq/x/d5nAcnD3vIyM3AbPOaTgcqrh0AqPSx7U53UFu3M6k1TH1u/eXc9/h4jm/3mpP1WRUpevlPY4PACd7AWw==",
+      "type": "package",
+      "path": "system.text.json/4.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Text.Json.dll",
+        "lib/net461/System.Text.Json.xml",
+        "lib/netcoreapp3.0/System.Text.Json.dll",
+        "lib/netcoreapp3.0/System.Text.Json.xml",
+        "lib/netstandard2.0/System.Text.Json.dll",
+        "lib/netstandard2.0/System.Text.Json.xml",
+        "system.text.json.4.7.0.nupkg.sha512",
+        "system.text.json.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
@@ -6505,10 +7173,17 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "BlazorApp/1.0.0": {
+      "type": "project",
+      "path": "../BlazorApp/BlazorApp.csproj",
+      "msbuildProject": "../BlazorApp/BlazorApp.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "BlazorApp >= 1.0.0",
+      "Microsoft.AspNetCore.Blazor.Server >= 3.1.0-preview4.19579.2",
       "Microsoft.AspNetCore.Mvc.NewtonsoftJson >= 3.1.0",
       "Microsoft.AspNetCore.SpaServices.Extensions >= 3.1.0",
       "Microsoft.EntityFrameworkCore.Design >= 3.1.0",
@@ -6549,7 +7224,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\alanm\\git\\repos\\netCoreAndAngular3\\SportsStore\\BlazorApp\\BlazorApp.csproj": {
+              "projectPath": "C:\\Users\\alanm\\git\\repos\\netCoreAndAngular3\\SportsStore\\BlazorApp\\BlazorApp.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -6561,6 +7240,10 @@
     "frameworks": {
       "netcoreapp3.1": {
         "dependencies": {
+          "Microsoft.AspNetCore.Blazor.Server": {
+            "target": "Package",
+            "version": "[3.1.0-preview4.19579.2, )"
+          },
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
             "target": "Package",
             "version": "[3.1.0, )"

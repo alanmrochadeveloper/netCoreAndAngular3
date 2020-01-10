@@ -146,3 +146,15 @@ C:\Users\alanm\git\repos\netCoreAndAngular3\SportsStore\ServerApp\bin\Debug\netc
 C:\Users\alanm_9qb660b\git\repos\netCoreAndAngular3\SportsStore\ServerApp\bin\Debug\netcoreapp3.1\libman.json
 C:\Users\alanm_9qb660b\git\repos\netCoreAndAngular3\SportsStore\ServerApp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.SqlServer.dll
 C:\Users\alanm\git\repos\netCoreAndAngular3\SportsStore\ServerApp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.SqlServer.dll
+C:\Users\alanm\git\repos\netCoreAndAngular3\SportsStore\ServerApp\bin\Debug\netcoreapp3.1\BlazorApp.blazor.config
+C:\Users\alanm\git\repos\netCoreAndAngular3\SportsStore\ServerApp\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Blazor.dll
+C:\Users\alanm\git\repos\netCoreAndAngular3\SportsStore\ServerApp\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Blazor.HttpClient.dll
+C:\Users\alanm\git\repos\netCoreAndAngular3\SportsStore\ServerApp\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Blazor.Server.dll
+C:\Users\alanm\git\repos\netCoreAndAngular3\SportsStore\ServerApp\bin\Debug\netcoreapp3.1\Mono.Cecil.Mdb.dll
+C:\Users\alanm\git\repos\netCoreAndAngular3\SportsStore\ServerApp\bin\Debug\netcoreapp3.1\Mono.Cecil.Pdb.dll
+C:\Users\alanm\git\repos\netCoreAndAngular3\SportsStore\ServerApp\bin\Debug\netcoreapp3.1\Mono.Cecil.Rocks.dll
+C:\Users\alanm\git\repos\netCoreAndAngular3\SportsStore\ServerApp\bin\Debug\netcoreapp3.1\Mono.Cecil.dll
+C:\Users\alanm\git\repos\netCoreAndAngular3\SportsStore\ServerApp\bin\Debug\netcoreapp3.1\Mono.WebAssembly.Interop.dll
+C:\Users\alanm\git\repos\netCoreAndAngular3\SportsStore\ServerApp\bin\Debug\netcoreapp3.1\BlazorApp.dll
+C:\Users\alanm\git\repos\netCoreAndAngular3\SportsStore\ServerApp\bin\Debug\netcoreapp3.1\BlazorApp.pdb
+C:\Users\alanm\git\repos\netCoreAndAngular3\SportsStore\ServerApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\Blazor.cshtml.g.cs

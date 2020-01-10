@@ -12,6 +12,9 @@ using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.EntityFrameworkCore;
 using ServerApp.Models;
 using Microsoft.OpenApi.Models;
+using Microsoft.AspNetCore.ResponseCompression;
+using Microsoft.Extensions.FileProviders;
+using System.IO;
 
 namespace ServerApp
 {
@@ -71,6 +74,11 @@ namespace ServerApp
                     options.Cookie.IsEssential = true;
                 }
             );
+            services.AddResponseCompression(
+                opts => {
+                    opts.MimeTypes = ResponseCompressionDefaults.MimeTypes.Concat(new[] {"application/octet-stream"});
+                }
+            );
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -87,7 +95,15 @@ namespace ServerApp
                 app.UseHsts();
             }
             app.UseHttpsRedirection();
+
             app.UseStaticFiles();
+
+            app.UseStaticFiles(
+                new StaticFileOptions{
+                    RequestPath = "/blazor",
+                    FileProvider = new PhysicalFileProvider( Path.Combine(Directory.GetCurrentDirectory(), "../BlazorApp/wwwroot"))
+                }
+            );
 
             app.UseSession();
 
@@ -99,14 +115,22 @@ namespace ServerApp
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Home}/{action=Index}/{id?}"
+                );
                     
                 endpoints.MapControllerRoute(
                     name: "angular_fallback",
                     pattern: "{target:regex(store|cart|checkout)}/{*catchall}",
                     defaults:new {controller = "Home", action = "Index"}
-                );    
+                );
+                endpoints.MapControllerRoute(
+                    name: "blazor_integration",
+                    pattern: "/blazor/{*path:nonfile}",
+                    defaults: new {controller = "Home", action = "Blazor"}
+                );
+                // endpoints.MapFallbackToClientSideBlazor<BlazorApp.Startup>("blazor/{*path:nonfile}", "index.html");    
             });
+            app.Map("/blazor", opts => opts.UseClientSideBlazorFiles<BlazorApp.Startup>());
             app.UseSwagger();
             app.UseSwaggerUI(
                 options => {
