@@ -131,6 +131,7 @@ namespace ServerApp
                 // endpoints.MapFallbackToClientSideBlazor<BlazorApp.Startup>("blazor/{*path:nonfile}", "index.html");    
             });
             app.Map("/blazor", opts => opts.UseClientSideBlazorFiles<BlazorApp.Startup>());
+            app.UseClientSideBlazorFiles<BlazorApp.Startup>();
             app.UseSwagger();
             app.UseSwaggerUI(
                 options => {

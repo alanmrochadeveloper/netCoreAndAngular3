@@ -25,7 +25,9 @@ const routes: Routes = [
   { path: "store/:categoryOrPage", component: ProductSelectionComponent},
   { path: "store/:category", component: ProductSelectionComponent},
   { path: "store", component: ProductSelectionComponent },
-  { path: "", redirectTo: "/store", pathMatch: "full"}
+  { path: "", redirectTo: "/store", pathMatch: "full"},
+  { path: "store", redirectTo: "store/", pathMatch: "full"},
+  { path: "", redirectTo: "store/", pathMatch: "full"}
 ];
 
 @NgModule({

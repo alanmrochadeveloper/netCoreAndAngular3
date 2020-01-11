@@ -1111,25 +1111,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\alanm\\.nuget\\packages\\": {},
+    "C:\\Users\\alanm_9qb660b\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\alanm\\git\\repos\\netCoreAndAngular3\\SportsStore\\BlazorApp\\BlazorApp.csproj",
+      "projectUniqueName": "C:\\Users\\alanm_9qb660b\\git\\repos\\netCoreAndAngular3\\netCoreAndAngular3\\netCoreAndAngular3\\SportsStore\\BlazorApp\\BlazorApp.csproj",
       "projectName": "BlazorApp",
-      "projectPath": "C:\\Users\\alanm\\git\\repos\\netCoreAndAngular3\\SportsStore\\BlazorApp\\BlazorApp.csproj",
-      "packagesPath": "C:\\Users\\alanm\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alanm\\git\\repos\\netCoreAndAngular3\\SportsStore\\BlazorApp\\obj\\",
+      "projectPath": "C:\\Users\\alanm_9qb660b\\git\\repos\\netCoreAndAngular3\\netCoreAndAngular3\\netCoreAndAngular3\\SportsStore\\BlazorApp\\BlazorApp.csproj",
+      "packagesPath": "C:\\Users\\alanm_9qb660b\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\alanm_9qb660b\\git\\repos\\netCoreAndAngular3\\netCoreAndAngular3\\netCoreAndAngular3\\SportsStore\\BlazorApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\alanm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\alanm_9qb660b\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
